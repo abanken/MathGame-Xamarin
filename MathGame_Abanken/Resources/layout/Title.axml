@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@android:color/white">
+    <TextView
+        android:text="Math Game"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:padding="8dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="45dp"
+        android:gravity="center" />
+    <ImageView
+        android:layout_below="@id/title"
+        android:src="@drawable/titlepic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/titlepicture" />
+    <Button
+        android:text="New Game"
+        android:layout_below="@id/titlepicture"
+        android:id="@+id/newGame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+ />
+    <Button
+        android:text="High Score"
+        android:id="@+id/scoreBut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+
+        android:layout_below="@id/newGame" />
+</RelativeLayout>
